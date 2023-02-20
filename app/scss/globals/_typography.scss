@@ -1,0 +1,14 @@
+@use "../util" as u;
+@use "./colors" as c;
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: c.$very-dark-blue;
+  font-weight: 600;
+
+  &:hover {
+    color: c.$blue;
+  }
+}

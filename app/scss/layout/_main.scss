@@ -1,0 +1,160 @@
+@use "../util" as u;
+@use "../globals" as g;
+
+main {
+  background-color: g.$white;
+  max-width: 730px;
+
+  @include u.breakpoint(medium) {
+    margin: 60px auto;
+    border-radius: 14px;
+  }
+
+  .container {
+    padding: u.rem(30) u.rem(16);
+
+    @include u.breakpoint(medium) {
+      padding: u.rem(40) u.rem(20);
+    }
+
+    .heading {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 25px;
+
+      h1 {
+        font-size: u.rem(20);
+        margin-right: 10px;
+        color: g.$very-dark-blue;
+
+        @include u.breakpoint(medium) {
+          font-size: u.rem(24);
+        }
+      }
+
+      #left-to-read {
+        display: initial;
+        margin-right: auto;
+        font-weight: 700;
+        color: g.$white;
+        background-color: g.$blue;
+        padding: 5px 14px;
+        border-radius: 8px;
+      }
+
+      #mark-read-btn {
+        color: g.$dark-grayish-blue;
+        border: none;
+        background: none;
+        cursor: pointer;
+
+        @include u.breakpoint(medium) {
+          font-size: u.rem(16);
+          font-weight: 500;
+
+          &:hover {
+            color: g.$blue;
+          }
+        }
+      }
+    }
+
+    .notification {
+      .card {
+        display: flex;
+        padding: 16px;
+        margin-bottom: 12px;
+        border-radius: 12px;
+
+        &__img {
+          width: 40px;
+          height: 40px;
+          margin-right: 10px;
+
+          @include u.breakpoint(medium) {
+            width: 45px;
+            height: 45px;
+            margin-right: 15px;
+          }
+        }
+
+        &__text {
+          color: g.$dark-grayish-blue;
+          font-size: u.rem(14);
+
+          @include u.breakpoint(medium) {
+            font-size: u.rem(16);
+          }
+
+          span {
+            font-weight: 600;
+          }
+
+          .post {
+            color: g.$dark-grayish-blue;
+            font-weight: 600;
+
+            &:hover {
+              color: g.$blue;
+            }
+          }
+
+          .red-dot {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            background-color: g.$red;
+            border-radius: 50%;
+            margin-left: 6px;
+          }
+
+          .time {
+            line-height: 1.75;
+          }
+
+          .extra-para {
+            border: 1px solid g.$light-grayish-blue-2;
+            border-radius: 12px;
+            padding: 16px 14px;
+            margin-top: 10px;
+            font-weight: 400;
+            font-size: u.rem(14);
+
+            &:hover {
+              background-color: g.$light-grayish-blue-1;
+            }
+          }
+
+          .chess-link {
+            color: g.$blue;
+          }
+        }
+
+        .chess-img-link {
+          margin-left: auto;
+        }
+        .extra-img {
+          width: 40px;
+          height: 40px;
+          border-radius: 10px;
+        }
+      }
+
+      .active {
+        background-color: g.$very-light-grayish-blue;
+      }
+    }
+  }
+}
+
+// footer
+footer {
+  font-size: 11px;
+  text-align: center;
+  margin: 8px 0;
+
+  a {
+    color: hsl(228, 45%, 44%);
+  }
+}

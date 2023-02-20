@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <!-- page title -->
+    <title>Notifications page</title>
+    <!-- css stylesheet -->
+    <link rel="stylesheet" href="./dist/css/style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="heading">
+          <h1>Notifications</h1>
+          <div id="left-to-read">3</div>
+          <button id="mark-read-btn">Mark all as read</button>
+        </div>
+
+        <div class="notification">
+          <div id="first" class="card active">
+            <img
+              class="card__img"
+              src="./assets/images/avatar-mark-webber.webp"
+              alt="profile picture of Mark Webber"
+            />
+
+            <div class="card__text">
+              <a href="#">Mark Webber</a> reacted to your recent post
+              <a href="#" class="post">My first tournament today!</a>
+              <div id="dot-one" class="red-dot"></div>
+              <div class="time">1m ago</div>
+            </div>
+          </div>
+
+          <div id="second" class="card active">
+            <img
+              class="card__img"
+              src="./assets/images/avatar-angela-gray.webp"
+              alt="profile picture of angela gray"
+            />
+
+            <div class="card__text">
+              <a href="#">Angela Gray</a> followed you
+              <div id="dot-two" class="red-dot"></div>
+              <div class="time">5m ago</div>
+            </div>
+          </div>
+
+          <div id="third" class="card active">
+            <img
+              class="card__img"
+              src="./assets/images/avatar-jacob-thompson.webp"
+              alt="profile picture of jacob thompson"
+            />
+
+            <div class="card__text">
+              <a href="#">Jacob Thompson</a> has joined your group
+              <a class="chess-link" href="#">Chess Club</a>
+              <div id="dot-three" class="red-dot"></div>
+              <div class="time">1 day ago</div>
+            </div>
+          </div>
+
+          <!-- extra paragraph -->
+          <div class="card">
+            <img
+              class="card__img"
+              src="./assets/images/avatar-rizky-hasanuddin.webp"
+              alt="profile picture of rizky hasanuddin"
+            />
+
+            <div class="card__text">
+              <a href="#">Rizky Hasanuddin</a> sent you a private message
+              <div class="time">5 day ago</div>
+              <a href="#">
+                <p class="extra-para">
+                  Hello, thanks for setting up the Chess Club. I've been a
+                  member for a few weeks now and I'm already having lots of fun
+                  and improving my game.
+                </p>
+              </a>
+            </div>
+          </div>
+
+          <!-- extra img -->
+          <div class="card">
+            <img
+              class="card__img"
+              src="./assets/images/avatar-kimberly-smith.webp"
+              alt="profile picture of kimberly smith"
+            />
+
+            <div class="card__text">
+              <div class="card__text__wrap">
+                <a href="#">Kimberly Smith</a> commented on your picture
+                <div class="time">1 week ago</div>
+              </div>
+            </div>
+
+            <a class="chess-img-link" href="#"
+              ><img
+                class="extra-img"
+                src="./assets/images/image-chess.webp"
+                alt="comment in this picture"
+            /></a>
+          </div>
+
+          <div class="card">
+            <img
+              class="card__img"
+              src="./assets/images/avatar-nathan-peterson.webp"
+              alt="profile picture of nathan peterson"
+            />
+
+            <div class="card__text">
+              <a href="#">Nathan Peterson</a> reacted to your recent post
+              <a class="post" href="#"
+                >5 end-game strategies to increase your win rate</a
+              >
+              <div class="time">2 weeks ago</div>
+            </div>
+          </div>
+
+          <div class="card">
+            <img
+              class="card__img"
+              src="./assets/images/avatar-angela-gray.webp"
+              alt="profile picture of angela gray"
+            />
+
+            <div class="card__text">
+              <a href="#">Anna Kim</a> left the group
+              <a class="chess-link" href="#">Chess Club</a>
+              <div class="time">2 weeks ago</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </footer>
+
+    <!-- js file -->
+    <script src="./app/js/script.js"></script>
+  </body>
+</html>

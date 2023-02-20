@@ -1,0 +1,177 @@
+@font-face {
+  font-family: PlusJakartaSans;
+  src: url(.././../../assets/fonts/PlusJakartaSans-VariableFont_wght.ttf) format("truetype");
+}
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "PlusJakartaSans", sans-serif;
+  background-color: hsl(211deg, 68%, 94%);
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: hsl(224deg, 21%, 14%);
+  font-weight: 600;
+}
+a:hover,
+a:visited:hover,
+a:active:hover {
+  color: hsl(219deg, 85%, 26%);
+}
+
+main {
+  background-color: hsl(0deg, 0%, 100%);
+  max-width: 730px;
+}
+@media (min-width: 48em) {
+  main {
+    margin: 60px auto;
+    border-radius: 14px;
+  }
+}
+main .container {
+  padding: 1.875rem 1rem;
+}
+@media (min-width: 48em) {
+  main .container {
+    padding: 2.5rem 1.25rem;
+  }
+}
+main .container .heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+main .container .heading h1 {
+  font-size: 1.25rem;
+  margin-right: 10px;
+  color: hsl(224deg, 21%, 14%);
+}
+@media (min-width: 48em) {
+  main .container .heading h1 {
+    font-size: 1.5rem;
+  }
+}
+main .container .heading #left-to-read {
+  display: initial;
+  margin-right: auto;
+  font-weight: 700;
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(219deg, 85%, 26%);
+  padding: 5px 14px;
+  border-radius: 8px;
+}
+main .container .heading #mark-read-btn {
+  color: hsl(219deg, 12%, 42%);
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+@media (min-width: 48em) {
+  main .container .heading #mark-read-btn {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  main .container .heading #mark-read-btn:hover {
+    color: hsl(219deg, 85%, 26%);
+  }
+}
+main .container .notification .card {
+  display: flex;
+  padding: 16px;
+  margin-bottom: 12px;
+  border-radius: 12px;
+}
+main .container .notification .card__img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+@media (min-width: 48em) {
+  main .container .notification .card__img {
+    width: 45px;
+    height: 45px;
+    margin-right: 15px;
+  }
+}
+main .container .notification .card__text {
+  color: hsl(219deg, 12%, 42%);
+  font-size: 0.875rem;
+}
+@media (min-width: 48em) {
+  main .container .notification .card__text {
+    font-size: 1rem;
+  }
+}
+main .container .notification .card__text span {
+  font-weight: 600;
+}
+main .container .notification .card__text .post {
+  color: hsl(219deg, 12%, 42%);
+  font-weight: 600;
+}
+main .container .notification .card__text .post:hover {
+  color: hsl(219deg, 85%, 26%);
+}
+main .container .notification .card__text .red-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background-color: hsl(1deg, 90%, 64%);
+  border-radius: 50%;
+  margin-left: 6px;
+}
+main .container .notification .card__text .time {
+  line-height: 1.75;
+}
+main .container .notification .card__text .extra-para {
+  border: 1px solid hsl(205deg, 33%, 90%);
+  border-radius: 12px;
+  padding: 16px 14px;
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 0.875rem;
+}
+main .container .notification .card__text .extra-para:hover {
+  background-color: hsl(211deg, 68%, 94%);
+}
+main .container .notification .card__text .chess-link {
+  color: hsl(219deg, 85%, 26%);
+}
+main .container .notification .card .chess-img-link {
+  margin-left: auto;
+}
+main .container .notification .card .extra-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+}
+main .container .notification .active {
+  background-color: hsl(210deg, 60%, 98%);
+}
+
+footer {
+  font-size: 11px;
+  text-align: center;
+  margin: 8px 0;
+}
+footer a {
+  color: hsl(228deg, 45%, 44%);
+}/*# sourceMappingURL=style.css.map */
